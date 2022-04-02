@@ -4,6 +4,7 @@ import LogoS from '../../assets/images/logo-s.png'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => {
   return (
@@ -32,6 +33,35 @@ const Sidebar = () => {
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
       </nav>
+      <ul>
+        <li>
+          <a 
+            target="_blank" 
+            rel="noreferrer" 
+            href="https://www.linkedin.com/in/shahid-ashiq-ali-40522a18b"
+          >
+            <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+          </a>
+        </li>
+        <li>
+          <a 
+            target="_blank" 
+            rel="noreferrer" 
+            href="https://github.com/syedshahidashiqali"
+          >
+            <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+          </a>
+        </li>
+        <li>
+          <a 
+            target="_blank" 
+            rel="noreferrer" 
+            href="https://www.facebook.com/syedshahid.ali.9083/"
+          >
+            <FontAwesomeIcon icon={faFacebook} color="#4d4d4e" />
+          </a>
+        </li>
+      </ul>
     </div>
   )
 }
